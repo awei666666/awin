@@ -1,0 +1,20 @@
+{
+    "name": "awin\/xianliu",
+    "description": "Package description here.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "韩威兵",
+            "email": "1877361302@qq.com"
+        }
+    ],
+    "require": {
+        "awin/xianliu":"dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "Awin\\Xianliu\\": "src",
+            "Awin\\Test\\": "tests"
+        }
+    }
+}
