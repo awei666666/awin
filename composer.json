@@ -1,6 +1,6 @@
 {
     "name": "awin\/xianliu",
-    "description": "Package description here.",
+    "description": "自己尝试封装的一些工具类，暂时想到的就是  防止缓存雪崩的redis类。防止缓存击穿的串行器。还在考虑的布隆过滤器。以及各种限流类.",
     "license": "MIT",
     "authors": [
         {
