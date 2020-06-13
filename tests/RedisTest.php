@@ -13,13 +13,21 @@ class RedisTest
         $config['AUTH'] = 'redis';
         $config['port'] = '6379';
         $config['db'] = '1';
+        $config['ttl'] = 900;
         $obj = AwinRedis::getSingleton($config);
+
+        $obj->hIncrBy('abch', 9999, 1);
+
+        $res  = $obj->sAdd('abc', 'abc');
+        print_r($res);
+        exit;
+    
+        
 
         // 使用过滤器，会统一给设置过期时间。而且会有过期随机时间。防止缓存雪崩发生
         $obj::set('a', 8);
         // 直接调用reids方法
         $obj->set('a', 8);
-        // $obj->expire();
         return $obj->get('a');
     }
 
