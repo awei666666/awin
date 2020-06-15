@@ -8,9 +8,6 @@
             "email": "1877361302@qq.com"
         }
     ],
-    "require": {
-        "awin/xianliu":"dev-master"
-    },
     "autoload": {
         "psr-4": {
             "Awin\\Xianliu\\": "src",
