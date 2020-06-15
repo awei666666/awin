@@ -1,9 +1,6 @@
 <?php 
 
 namespace Awin\Xianliu;
-
-use Redis;
-
 class Bulong
 {
 
@@ -53,6 +50,7 @@ class Bulong
         $response = true;
         if ($this->find($str)) {
             foreach ($this->hashValuePool as $value) {
+                
                 $this->bitArray[$value] = $this->bitArray[$value] - 1;
             }
         } else {
@@ -104,5 +102,6 @@ class Bulong
         $this->bitArray = $callback();
     }
     
+
 
 }

@@ -33,6 +33,7 @@ class BuLongTest
         }
 
         $bloomFilter->save(function($data){
+            $data = array_filter($data);
             print_r($data);
 
         });
